@@ -85,8 +85,6 @@ We evaluate models using:
 
 ## 🖼️ Screenshots
 
-Add these screenshots in a folder named **screenshots/**:
-
 1. Dataset Preview
 
 ```
