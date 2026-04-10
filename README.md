@@ -69,7 +69,7 @@ We evaluate models using:
 | Model | Accuracy | ROC-AUC Score |
 |-------|----------|---------------|
 | Decision Tree | `92%`  | `0.92` |
-| Logistic Regression | `0.80%` | `0.74` |
+| Logistic Regression | `80%` | `0.74` |
 
 ---
 
