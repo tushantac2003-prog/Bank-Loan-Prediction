@@ -1,5 +1,0 @@
-
-ROC Curve.png
-git rm Screenshot
-git commit -m "Removed file"
-git push origin main
