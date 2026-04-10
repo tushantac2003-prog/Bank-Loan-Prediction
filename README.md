@@ -88,8 +88,7 @@ We evaluate models using:
 1. Dataset Preview
 
 ```
-<img width="875" height="516" alt="Dataset 2026-04-10 003908" src="https://github.com/user-attachments/assets/b0998836-72ba-494a-a104-b91d9e2db567" />
-
+"C:\Users\tusha\Downloads\ROC Curve.png"
 ```
 
 2. EDA Graph (Income / Distribution)
