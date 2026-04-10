@@ -79,8 +79,6 @@ We evaluate models using:
 
 ```
 <img width="1920" height="1440" alt="ROC Curve" src="https://github.com/user-attachments/assets/1de0f14a-9148-4ad4-96d3-3315b5287995" />
-
-
 ---
 
 ## 🖼️ Screenshots
