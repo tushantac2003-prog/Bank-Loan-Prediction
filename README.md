@@ -168,8 +168,7 @@ https://your-live-project-link.com
 * GitHub Repository:
 
 ```
-https://github.com/your-username/bank-loan-prediction
-
+https://github.com/tushantac2003-prog/Bank-Loan-Prediction
 ---
 
 ## 💾 Model Saving
@@ -200,8 +199,8 @@ pickle.dump(bl, open(r"C:\Users\tusha\Downloads\build.pkl",'wb'))
 
 Tushant Chaudhari
 
-* GitHub: https://github.com/your-username 
-* LinkedIn:(https://www.linkedin.com/in/tushant-chaudhari-a62b10298)
+* GitHub: https://github.com/tushantac2003-prog
+* LinkedIn:https://www.linkedin.com/in/tushant-chaudhari-a62b10298
 
 ---
 
