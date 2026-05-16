@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 # Load model
-model = pickle.load(open('build.pkl', 'rb'))
+pickle.dump(best_model, open("decision_tree_model.pkl", "wb"))
 
 st.title("Bank Loan Prediction")
 
