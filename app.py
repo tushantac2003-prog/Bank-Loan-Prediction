@@ -1,25 +1,26 @@
-import numpy as np
+import streamlit as st
 import pickle
-import math
-from flask import Flask, request, jsonify, render_template
+import numpy as np
 
-app = Flask(__name__, template_folder= "template", static_folder= "staticfiles") ## assign Flask = app
-model = pickle.load(open('build.pkl','rb'))   ### import model
+# Load model
+model = pickle.load(open('build.pkl', 'rb'))
 
-@app.route('/')
-def home():
-    return render_template('index.html')  # read index.html file
+st.title("Bank Loan Prediction")
 
-@app.route('/predict', methods=['POST'])   ###transfer data from html to python / server
+st.write("Enter Applicant Details")
 
-def predict():
-    int_features= [int(x)  for x in request.form.values()]   # request for data values
-    final_features= [np.array(int_features)]  # convert into array
-    prediction = model.predict(final_features)  # Predict
-    if prediction ==0:
-        return render_template('index.html', prediction_text="Loan is Rejected").format(prediction)
+income = st.number_input("Applicant Income")
+loan_amount = st.number_input("Loan Amount")
+credit_history = st.number_input("Credit History")
+dependents = st.number_input("Dependents")
+
+if st.button("Predict Loan Status"):
+
+    features = np.array([[income, loan_amount, credit_history, dependents]])
+
+    prediction = model.predict(features)
+
+    if prediction[0] == 1:
+        st.success("Loan Approved")
     else:
-        return render_template('index.html', prediction_text="Loan is Approved").format(prediction)
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8080)
+        st.error("Loan Rejected")
