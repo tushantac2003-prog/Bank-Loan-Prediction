@@ -9,14 +9,14 @@ st.title("Bank Loan Prediction")
 
 st.write("Enter Applicant Details")
 
-income = st.number_input("Applicant Income")
-loan_amount = st.number_input("Loan Amount")
-credit_history = st.number_input("Credit History")
+income = st.number_input("ApplicantIncome")
+loan_amount = st.number_input("LoanAmount")
+cibil_score = st.number_input("Cibil_Score")
 dependents = st.number_input("Dependents")
 
 if st.button("Predict Loan Status"):
 
-    features = np.array([[income, loan_amount, credit_history, dependents]])
+    features = np.array([[income, loan_amount, cibil_score, dependents]])
 
     prediction = model.predict(features)
 
