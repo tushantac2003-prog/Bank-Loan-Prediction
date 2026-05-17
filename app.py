@@ -29,8 +29,8 @@ if st.button("Predict Loan Status"):
     gender = 1 if gender == "Male" else 0
     dependents_map = {"0":0, "1":1, "2":2, "3+":3}
     dependents = dependents_map[dependents]
-
-    features = np.array([[income, loan_amount, cibil_score, dependents, credit_history,property_area, age, married, gender]])
+    
+    features = np.array([[age, gender, married, dependents, income, loan_amount, credit_history, cibil_score, property_area]])
 
     prediction = model.predict(features)
 
