@@ -15,7 +15,7 @@ loan_amount = st.number_input("LoanAmount")
 cibil_score = st.number_input("Cibil_Score")
 dependents = st.selectbox("No of Dependents", ["2","3","4"])
 credit_history = st.selectbox("Previous_Loan_Taken",["Yes","No"])
-property_area_map = st.selectbox("Property_Area", ["Urban","Rural","Semiurban"])
+property_area = st.selectbox("Property_Area", ["Urban","Rural","Semiurban"])
 age = st.number_input("Age")
 married = st.selectbox("Married", ["Yes","No"])
 
@@ -23,7 +23,7 @@ if st.button("Predict Loan Status"):
 
     credit_history = 1 if credit_history == "Yes" else 0
     married = 1 if married=="Yes" else 0
-    property_area = {"Urban":0,"Rural":1,"Semiurban":2}
+    property_area_map = {"Urban":0,"Rural":1,"Semiurban":2}
     property_area = property_area_map[property_area]
 
     features = np.array([[income, loan_amount, cibil_score, dependents, credit_history, age, property_area, married]])
