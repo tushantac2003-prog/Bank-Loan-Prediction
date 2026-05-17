@@ -18,7 +18,7 @@ credit_history = st.selectbox("Previous_Loan_Taken",["Yes","No"])
 property_area = st.selectbox("Property_Area", ["Urban","Rural","Semiurban"])
 age = st.number_input("Age")
 married = st.selectbox("Married", ["Yes","No"])
-gender = st.selectbox("Gender" , ["Yes","No"])
+gender = st.selectbox("Gender" , ["Male","Female"])
 
 if st.button("Predict Loan Status"):
 
