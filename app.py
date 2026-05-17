@@ -10,15 +10,15 @@ st.title("Bank Loan Prediction")
 
 st.write("Enter Applicant Details")
 
+age = st.number_input("Age")
+gender = st.selectbox("Gender" , ["Male","Female"])
+married = st.selectbox("Married", ["Yes","No"])
+dependents = st.selectbox("No of Dependents", ["0","1","2","3+"])
 income = st.number_input("ApplicantIncome")
 loan_amount = st.number_input("LoanAmount")
-cibil_score = st.number_input("Cibil_Score")
-dependents = st.selectbox("No of Dependents", ["0","1","2","3+"])
 credit_history = st.selectbox("Previous_Loan_Taken",["Yes","No"])
+cibil_score = st.number_input("Cibil_Score")
 property_area = st.selectbox("Property_Area", ["Urban","Rural","Semiurban"])
-age = st.number_input("Age")
-married = st.selectbox("Married", ["Yes","No"])
-gender = st.selectbox("Gender" , ["Male","Female"])
 
 if st.button("Predict Loan Status"):
 
