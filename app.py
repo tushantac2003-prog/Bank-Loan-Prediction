@@ -15,7 +15,7 @@ loan_amount = st.number_input("LoanAmount")
 cibil_score = st.number_input("Cibil_Score")
 dependents = st.selectbox("No of Dependents", ["2","3","4"])
 credit_history = st.selectbox("Previous_Loan_Taken",["Yes","No"])
-property_area = st.selectbox("Property_Area", ["Urban","Rural","Semiurban"])
+property_area_map = st.selectbox("Property_Area", ["Urban","Rural","Semiurban"])
 age = st.number_input("Age")
 married = st.selectbox("Married", ["Yes","No"])
 
