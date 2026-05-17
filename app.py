@@ -26,7 +26,7 @@ if st.button("Predict Loan Status"):
     property_area_map = {"Urban":0,"Rural":1,"Semiurban":2}
     property_area = property_area_map[property_area]
 
-    features = np.array([[income, loan_amount, cibil_score, dependents, credit_history, age, property_area, married]])
+    features = np.array([[income, loan_amount, cibil_score, dependents, credit_history,property_area, age, married]])
 
     prediction = model.predict(features)
 
