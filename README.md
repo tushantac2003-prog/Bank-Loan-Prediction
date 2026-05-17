@@ -155,8 +155,8 @@ jupyter notebook
 👉 Add your deployed link here:
 
 ```
-https://bank-loan-prediction-uhjfzofgmmtkvfbhwpgups.streamlit.app/
----
+[https://bank-loan-prediction-uhjfzofgmmtkvfbhwpgups.streamlit.app/
+](https://bank-loan-prediction-uhjfzofgmmtkvfbhwpgups.streamlit.app/)---
 
 ## 🔗 Important Links
 
