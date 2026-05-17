@@ -24,9 +24,9 @@ if st.button("Predict Loan Status"):
 
     credit_history = 1 if credit_history == "Yes" else 0
     married = 1 if married=="Yes" else 0
-    property_area_map = {"Urban":0,"Rural":1,"Semiurban":2}
+    property_area_map = {"Urban":2,"Rural":0,"Semiurban":1}
     property_area = property_area_map[property_area]
-    gender = 0 if gender == "Female" else 1
+    gender = 1 if gender == "Male" else 0
 
     features = np.array([[income, loan_amount, cibil_score, dependents, credit_history,property_area, age, married, gender]])
 
