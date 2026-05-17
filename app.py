@@ -21,6 +21,11 @@ married = st.selectbox("Married", ["Yes","No"])
 
 if st.button("Predict Loan Status"):
 
+    credit_history = 1 if credit_history == "Yes" else 0
+    married = 1 if married=="Yes" else 0
+    property_area = {"Urban":0,"Rural":1,"Semiurban":2}
+    property_area = property_area_map(property_area)
+
     features = np.array([[income, loan_amount, cibil_score, dependents, credit_history, age, property_area, married]])
 
     prediction = model.predict(features)
