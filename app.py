@@ -18,6 +18,7 @@ credit_history = st.selectbox("Previous_Loan_Taken",["Yes","No"])
 property_area = st.selectbox("Property_Area", ["Urban","Rural","Semiurban"])
 age = st.number_input("Age")
 married = st.selectbox("Married", ["Yes","No"])
+gender = st.selectbox("Gender" , ["Yes","No"])
 
 if st.button("Predict Loan Status"):
 
@@ -25,6 +26,7 @@ if st.button("Predict Loan Status"):
     married = 1 if married=="Yes" else 0
     property_area_map = {"Urban":0,"Rural":1,"Semiurban":2}
     property_area = property_area_map[property_area]
+    gender = 0 if gender == "Female" else 1
 
     features = np.array([[income, loan_amount, cibil_score, dependents, credit_history,property_area, age, married]])
 
